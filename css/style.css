@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f5f8; color: #263248; font-family: Arial, sans-serif; line-height: 1.65; }
+header { background: #19283f; color: #cbd5e1; }
+.header-inner { max-width: 1000px; margin: auto; padding: 23px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+.brand { color: white; text-decoration: none; font-size: 23px; font-weight: bold; letter-spacing: -1px; }
+.brand span { color: #8eb6ff; margin-left: 8px; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; padding: 13px 20px; background: white; border-bottom: 1px solid #dfe5ed; }
+nav a { text-decoration: none; color: #536176; padding: 8px 13px; border-radius: 5px; font-size: 14px; }
+nav a:hover, nav a[aria-current="page"] { color: #2458b8; background: #eaf1ff; }
+main { max-width: 900px; margin: 0 auto; padding: 42px 24px 55px; }
+.eyebrow, .task-label { color: #41649a; font-size: 12px; font-weight: bold; letter-spacing: 1.4px; }
+h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.2; letter-spacing: -1px; margin: 12px 0; }
+h2 { font-size: 22px; margin: 6px 0 10px; line-height: 1.3; }
+h3 { font-size: 18px; margin: 0 0 10px; }
+p { margin: 10px 0; }
+.intro { color: #647084; margin-bottom: 25px; }
+.student { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 16px 20px; margin-bottom: 25px; border-left: 3px solid #3167c8; background: #e8eef7; font-size: 14px; }
+.student span { color: #536176; }
+.card { background: white; border: 1px solid #dfe5ed; border-radius: 10px; padding: 26px; margin: 22px 0; }
+.demo { padding: 20px; background: #f3f6fb; border: 1px dashed #c9d5e5; border-radius: 6px; margin: 18px 0; overflow-wrap: anywhere; }
+.demo p:first-child { margin-top: 0; }.demo p:last-child { margin-bottom: 0; }
+.visibility-demo { min-height: 85px; }
+.notice { background: #edf6ef; color: #2e653e; padding: 10px 15px; border-radius: 5px; }
+.buttons { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 8px; }
+button { font: inherit; font-size: 14px; font-weight: bold; border: 1px solid #2f61be; border-radius: 5px; background: #2f61be; color: white; cursor: pointer; padding: 10px 17px; }
+button:hover { background: #244f9f; }
+button.secondary { background: white; color: #365b96; border-color: #c9d5e5; }
+button.secondary:hover { background: #edf3fe; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid #dd9d24; outline-offset: 3px; }
+a { color: #2e5fb7; }
+.hint { color: #657186; font-size: 13px; margin-top: 15px; }
+code { font-family: Consolas, monospace; font-size: .93em; background: #edf1f7; padding: 2px 5px; border-radius: 3px; }
+pre { padding: 18px; background: #1e2d44; color: #d9e8ff; border-radius: 6px; overflow-x: auto; font-size: 14px; }
+pre code { background: transparent; padding: 0; }
+img { display: block; max-width: 100%; height: auto; border-radius: 6px; }
+.image-stage { min-height: 100px; background: #f3f6fb; border-radius: 6px; }
+ul.demo { padding-left: 40px; }li { padding: 4px 0; }
+label { display: block; font-size: 14px; font-weight: bold; margin: 16px 0 5px; }
+input { width: 100%; max-width: 450px; padding: 11px 13px; border: 1px solid #c7d1df; border-radius: 5px; font: inherit; }
+.animation-stage { position: relative; height: 230px; margin: 18px 0; background-color: #f3f6fb; background-image: radial-gradient(#cbd6e7 1px, transparent 1px); background-size: 20px 20px; border: 1px solid #e1e7f0; border-radius: 6px; overflow: hidden; }
+.box { position: absolute; top: 20px; left: 20px; width: 60px; height: 60px; background: #4278d5; border-radius: 5px; }
+.green { background: #36816e; }.orange { background: #d38a38; }
+.accordion { margin-top: 24px; }.accordion h3 { margin: 0; }
+.accordion-trigger { display: flex; align-items: center; justify-content: space-between; gap: 15px; width: 100%; text-align: left; color: #263248; background: #f3f6fb; border: 1px solid #dce4ee; border-radius: 5px; padding: 17px; margin-top: 10px; font-size: 15px; }
+.accordion-trigger:hover, .accordion-trigger[aria-expanded="true"] { background: #eaf1ff; color: #2458b8; }
+.accordion-trigger span { font-size: 22px; font-weight: normal; }
+.accordion-answer { display: none; padding: 6px 20px 12px; border-left: 2px solid #7598d6; margin: 8px 0 15px; }
+.next { display: inline-block; margin-top: 8px; text-decoration: none; font-weight: bold; font-size: 14px; }
+footer { text-align: center; border-top: 1px solid #dfe5ed; color: #667287; padding: 23px; font-size: 13px; }
+@media (max-width: 600px) { .header-inner { align-items: flex-start; flex-direction: column; gap: 2px; } nav { justify-content: flex-start; padding: 10px 14px; } nav a { padding: 7px 9px; font-size: 12px; } main { padding: 28px 16px; }.card { padding: 20px; } }

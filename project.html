@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mini Project | jQuery Assignment</title><link rel="stylesheet" href="css/style.css"><script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script><script src="js/script.js" defer></script></head>
+<body>
+  <header><div class="header-inner"><a class="brand" href="index.html">jQuery Lab <span>/ 06</span></a><span>Web Technologies · AITU</span></div></header>
+  <nav aria-label="Main navigation"><a href="index.html">01 · Getting started</a><a href="effects.html">02 · Effects</a><a href="dom.html">03 · DOM manipulation</a><a href="animations.html">04 · Animations</a><a href="project.html" aria-current="page">05 · Mini project</a></nav>
+  <main><p class="eyebrow">ASSIGNMENT #6 / PART 5</p><h1>A little jQuery FAQ</h1><p class="intro">An accordion menu with animated answers. Click a question to explore.</p>
+    <section class="card"><div class="task-label">TASK 11 · ACCORDION MENU</div><h2>Questions before the defense</h2><p>Only one answer stays open at a time. Click it again to close it.</p>
+      <div class="accordion">
+        <h3><button class="accordion-trigger" id="question-1" aria-expanded="false" aria-controls="answer-1">01. What is jQuery?<span aria-hidden="true">+</span></button></h3><div class="accordion-answer" id="answer-1" role="region" aria-labelledby="question-1"><p>jQuery is a JavaScript library that makes selecting HTML elements, handling events and creating effects easier. The $ symbol is a shortcut for jQuery.</p></div>
+        <h3><button class="accordion-trigger" id="question-2" aria-expanded="false" aria-controls="answer-2">02. How do selectors work?<span aria-hidden="true">+</span></button></h3><div class="accordion-answer" id="answer-2" role="region" aria-labelledby="question-2"><p><code>$("#title")</code> selects an ID, <code>$(".note")</code> selects a class, and <code>$("p")</code> selects all paragraph elements.</p></div>
+        <h3><button class="accordion-trigger" id="question-3" aria-expanded="false" aria-controls="answer-3">03. What is the difference between text and HTML?<span aria-hidden="true">+</span></button></h3><div class="accordion-answer" id="answer-3" role="region" aria-labelledby="question-3"><p><code>.text()</code> inserts plain text. <code>.html()</code> interprets HTML tags. I use .text() for the form preview so user input is displayed as text.</p></div>
+        <h3><button class="accordion-trigger" id="question-4" aria-expanded="false" aria-controls="answer-4">04. How does this accordion work?<span aria-hidden="true">+</span></button></h3><div class="accordion-answer" id="answer-4" role="region" aria-labelledby="question-4"><p>A click handler finds the selected answer. Other answers close with .slideUp(), and the selected answer opens or closes with .slideToggle(). The button's aria-expanded attribute tracks its state.</p></div>
+        <h3><button class="accordion-trigger" id="question-5" aria-expanded="false" aria-controls="answer-5">05. How are animations queued?<span aria-hidden="true">+</span></button></h3><div class="accordion-answer" id="answer-5" role="region" aria-labelledby="question-5"><p>Several .animate() calls on the same element run in sequence by default. Multiple properties in one .animate() call change together. The duration is measured in milliseconds.</p></div>
+      </div>
+    </section><a class="next" href="index.html">← Back to the start</a>
+  </main><footer>Mardan Khalilov · SE-2527 · Assignment #6</footer>
+</body></html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started | jQuery Assignment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header><div class="header-inner"><a class="brand" href="index.html">jQuery Lab <span>/ 06</span></a><span>Web Technologies · AITU</span></div></header>
+  <nav aria-label="Main navigation"><a href="index.html" aria-current="page">01 · Getting started</a><a href="effects.html">02 · Effects</a><a href="dom.html">03 · DOM manipulation</a><a href="animations.html">04 · Animations</a><a href="project.html">05 · Mini project</a></nav>
+  <main>
+    <p class="eyebrow">ASSIGNMENT #6 / PART 1</p>
+    <h1>Getting started with jQuery</h1>
+    <p class="intro">Small experiments with selectors, effects and animations.</p>
+    <div class="student"><strong>Mardan Khalilov</strong><span>SE-2527 · Astana IT University</span></div>
+    <section class="card"><div class="task-label">TASK 0</div><h2>Setup</h2><p>jQuery is connected from a CDN. Open the browser console (F12) to see <code>jQuery is ready!</code></p><p id="ready-status" class="notice" role="status">Waiting for jQuery… If this stays visible, check your internet connection.</p><pre><code>$(document).ready(function () {
+  console.log("jQuery is ready!");
+});</code></pre></section>
+    <section class="card"><div class="task-label">TASK 1</div><h2>Selectors &amp; CSS</h2><p>Select elements by ID, class and tag, then change their content and style.</p><div class="demo"><h3 id="selector-title">This heading has an ID</h3><p class="selector-text">This paragraph has a class.</p><p class="selector-text">This paragraph uses the same class.</p><small>This element is selected by its tag.</small></div><div class="buttons"><button id="change-text">Change text</button><button id="change-html" class="secondary">Change HTML</button><button id="change-style" class="secondary">Change styles</button></div><p class="hint">Methods: <code>.text()</code> <code>.html()</code> <code>.css()</code></p></section>
+    <a class="next" href="effects.html">Next: jQuery effects →</a>
+  </main><footer>Mardan Khalilov · SE-2527 · Assignment #6</footer>
+</body>
+</html>

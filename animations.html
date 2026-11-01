@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Animations | jQuery Assignment</title><link rel="stylesheet" href="css/style.css"><script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script><script src="js/script.js" defer></script></head>
+<body>
+  <header><div class="header-inner"><a class="brand" href="index.html">jQuery Lab <span>/ 06</span></a><span>Web Technologies · AITU</span></div></header>
+  <nav aria-label="Main navigation"><a href="index.html">01 · Getting started</a><a href="effects.html">02 · Effects</a><a href="dom.html">03 · DOM manipulation</a><a href="animations.html" aria-current="page">04 · Animations</a><a href="project.html">05 · Mini project</a></nav>
+  <main><p class="eyebrow">ASSIGNMENT #6 / PART 4</p><h1>Let's move things</h1><p class="intro">Three examples using jQuery's .animate() method. Reset and try again.</p>
+    <section class="card"><div class="task-label">TASK 8</div><h2>Basic animation</h2><p>Move the square to the right and increase its size.</p><div class="animation-stage"><div id="basic-box" class="box" aria-label="Blue animated square"></div></div><div class="buttons"><button id="basic-start">Animate</button><button class="secondary reset-box" data-box="basic-box">Reset</button></div></section>
+    <section class="card"><div class="task-label">TASK 9</div><h2>One step at a time</h2><p>Move right → move down → shrink → return to original.</p><div class="animation-stage"><div id="sequence-box" class="box green" aria-label="Green animated square"></div></div><div class="buttons"><button id="sequence-start">Start sequence</button><button class="secondary reset-box" data-box="sequence-box">Reset</button></div><p class="hint">Chained animations run in order using the jQuery animation queue.</p></section>
+    <section class="card"><div class="task-label">TASK 10</div><h2>Everything at once</h2><p>Change opacity, size and position in one .animate() call.</p><div class="animation-stage"><div id="combined-box" class="box orange" aria-label="Orange animated square"></div></div><div class="buttons"><button id="combined-start">Animate together</button><button class="secondary reset-box" data-box="combined-box">Reset</button></div></section>
+    <a class="next" href="project.html">Next: mini project →</a>
+  </main><footer>Mardan Khalilov · SE-2527 · Assignment #6</footer>
+</body></html>
