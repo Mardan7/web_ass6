@@ -4,6 +4,9 @@
 **Group:** SE-2527  
 **University:** Astana IT University
 
+**Live website:** https://mardan7.github.io/web_ass6/  
+**Repository:** https://github.com/Mardan7/web_ass6
+
 A simple multipage website for practicing jQuery selectors, effects, DOM manipulation and animations. Built with HTML, CSS and jQuery 3.7.1, loaded from a CDN. No build step is needed.
 
 ## Run the project
